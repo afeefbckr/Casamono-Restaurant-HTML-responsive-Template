@@ -122,7 +122,7 @@ header section div.right ul li a.button{
 	background-color: black;
 	background-image: url(/images/spot-bg.png);
 	background-size: cover;
-	height: 100vh;
+	
 	
 	
 }
@@ -147,7 +147,7 @@ header section div.right ul li a.button{
 }
 
 #about{
-	height: 100vh;
+	
 	background-color: #F5980C;
 }
 
@@ -213,7 +213,7 @@ font-size: 18px;
 
 
 #menu{
-	height: 100vh;
+	
 	background-color: #F5980C;
 
 
@@ -270,11 +270,11 @@ div.bottom ul li p{
 	border-radius: 45px;
 }
 #contact{
-	height: 100vh;
 	
-	background: url(/images/footer-bg.jpg) no-repeat center;
+	
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(/images/footer-bg.jpg) no-repeat center;
 	background-size: cover;
-	background-color: black;
+	
 	
 }
 #contact .wrapper ul{
@@ -318,6 +318,90 @@ div.bottom ul li p{
 .final p{
 	text-align: center;
 }
+@media all and (max-width: 640px){
+#about .wrapper{
+	display: block;
+	flex-wrap: wrap;
+}
+#about div.left p{
+	width: 400px;
+}
+#about div.right{
+	align-items: center;
+}
+#about div.right img.first{
+	width: 200px;
+}
+#about div.right img.second{
+	width: 200px;
+
+}
+#menu div.button a {
+	bottom: 20px;
+	position: relative;
+}
+#contact .wrapper ul li p {
+	font-size: 15px;
+	width: 200px;
+}
+}
+@media all and (max-width: 480px){
+header section div.right ul li a.button{
+	display: none;
+}
+header section div.left{
+	padding: 0 20px;
+}
+#spotlight{
+	background-image: none;
+}
+#spotlight div.content {
+	padding: 30px 40px;
+	
+}
+#spotlight div.content h1{
+	font-size: 30px;
+}
+#about div.right img.first{
+	width: 150px;
+}
+#about div.right img.second{
+	width: 150px;
+}
+#menu div.bottom ul{
+	display: block;
+	flex-wrap: wrap;
+}
+#menu div.bottom ul li h3{
+	font-size: 10px;
+}
+#contact{
+	background-image: none;
+	background-color: black;
+}
+#contact .wrapper ul{
+	display: block;
+	flex-wrap: wrap;
+}
+#contact .wrapper ul li h3{
+	margin-top: 20px;
+}
+
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
 
 
 
